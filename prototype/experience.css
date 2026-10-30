@@ -15,3 +15,9 @@ svg text{font-family:Arial,Helvetica,sans-serif!important}
 @media(max-width:700px){.reviewbar{padding:8px 16px}.reviewbar nav{gap:8px}.reviewbar nav a{min-height:36px;display:flex;align-items:center}.reviewbar .reviewbrand{display:none}.reviewbar nav{width:100%;justify-content:space-between}.reviewbar button{padding:7px;font-size:10px}.topbar{padding:18px 20px}main.policy-page{padding:28px 20px}}
 
 .route-loading{padding:48px 24px;max-width:800px;margin:auto;min-height:50vh;color:#c4ccd3}.route-loading h1{font:600 24px Arial,sans-serif}.route-loading a{color:#f8fafc}.route-skeleton{display:grid;gap:18px;margin-top:32px}.route-skeleton span{display:block;height:36px;background:#172231}.route-skeleton span:last-child{height:180px}
+
+/* Search fields are the owner's explicit exception to square controls. */
+.m-shell .m-search,.topbar #header-search{border-radius:999px!important;overflow:hidden}
+.m-shell .m-search .m-search-field,.topbar #header-search input{border-radius:999px 0 0 999px!important}
+.m-shell .m-search button,.topbar #header-search button{border-radius:0 999px 999px 0!important}
+
