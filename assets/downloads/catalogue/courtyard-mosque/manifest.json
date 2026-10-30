@@ -1,0 +1,32 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/courtyard-mosque.blend",
+      "bytes": 3490968,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "courtyard-mosque.glb",
+      "bytes": 802868,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "courtyard-mosque-obj.zip",
+      "bytes": 566236,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "courtyard-mosque.fbx",
+      "bytes": 884188,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 118,
+  "previewPolygons": 5222,
+  "previewTriangles": 10324,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

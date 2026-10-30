@@ -1,0 +1,32 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/yam-farm.blend",
+      "bytes": 7855884,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "yam-farm.glb",
+      "bytes": 2461432,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "yam-farm-obj.zip",
+      "bytes": 860627,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "yam-farm.fbx",
+      "bytes": 3365804,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 969,
+  "previewPolygons": 20350,
+  "previewTriangles": 42668,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

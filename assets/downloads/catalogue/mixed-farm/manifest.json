@@ -1,0 +1,32 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/mixed-farm.blend",
+      "bytes": 7771700,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "mixed-farm.glb",
+      "bytes": 3180484,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "mixed-farm-obj.zip",
+      "bytes": 1424251,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "mixed-farm.fbx",
+      "bytes": 3689740,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 800,
+  "previewPolygons": 31150,
+  "previewTriangles": 66856,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

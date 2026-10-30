@@ -1,0 +1,32 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/cocoa-farm.blend",
+      "bytes": 7879600,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "cocoa-farm.glb",
+      "bytes": 2535364,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "cocoa-farm-obj.zip",
+      "bytes": 1242267,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "cocoa-farm.fbx",
+      "bytes": 3168876,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 756,
+  "previewPolygons": 28408,
+  "previewTriangles": 56912,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

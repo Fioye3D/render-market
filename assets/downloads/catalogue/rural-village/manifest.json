@@ -1,0 +1,32 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/rural-village.blend",
+      "bytes": 6574184,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "rural-village.glb",
+      "bytes": 3676600,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "rural-village-obj.zip",
+      "bytes": 1876550,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "rural-village.fbx",
+      "bytes": 3824956,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 534,
+  "previewPolygons": 37908,
+  "previewTriangles": 86856,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

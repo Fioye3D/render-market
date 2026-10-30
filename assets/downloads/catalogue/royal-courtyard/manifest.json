@@ -1,0 +1,32 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/royal-courtyard.blend",
+      "bytes": 3343328,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "royal-courtyard.glb",
+      "bytes": 753452,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "royal-courtyard-obj.zip",
+      "bytes": 523934,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "royal-courtyard.fbx",
+      "bytes": 850956,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 119,
+  "previewPolygons": 3586,
+  "previewTriangles": 7468,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

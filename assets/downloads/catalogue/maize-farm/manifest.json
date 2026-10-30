@@ -1,0 +1,32 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/maize-farm.blend",
+      "bytes": 10867444,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "maize-farm.glb",
+      "bytes": 5351996,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "maize-farm-obj.zip",
+      "bytes": 2494676,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "maize-farm.fbx",
+      "bytes": 5957276,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 1185,
+  "previewPolygons": 56422,
+  "previewTriangles": 120860,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

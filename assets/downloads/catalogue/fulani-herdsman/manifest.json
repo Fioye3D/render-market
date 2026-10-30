@@ -1,0 +1,32 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/fulani-herdsman.blend",
+      "bytes": 6739880,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "fulani-herdsman.glb",
+      "bytes": 2047360,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "fulani-herdsman-obj.zip",
+      "bytes": 1400352,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "fulani-herdsman.fbx",
+      "bytes": 2090588,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 208,
+  "previewPolygons": 42150,
+  "previewTriangles": 81844,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

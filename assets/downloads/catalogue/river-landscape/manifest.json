@@ -1,0 +1,32 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/river-landscape.blend",
+      "bytes": 4437704,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "river-landscape.glb",
+      "bytes": 868384,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "river-landscape-obj.zip",
+      "bytes": 452105,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "river-landscape.fbx",
+      "bytes": 1188812,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 324,
+  "previewPolygons": 6680,
+  "previewTriangles": 12848,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

@@ -1,0 +1,32 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/cattle-ranch.blend",
+      "bytes": 5463884,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "cattle-ranch.glb",
+      "bytes": 1517816,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "cattle-ranch-obj.zip",
+      "bytes": 987312,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "cattle-ranch.fbx",
+      "bytes": 1564124,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 198,
+  "previewPolygons": 23040,
+  "previewTriangles": 43824,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

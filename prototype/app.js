@@ -69,7 +69,7 @@ function validate(to){if(to==='upload-2'&&!(state.fields.title??'Courtyard / Ear
  if(to==='upload-3'&&!state.files){notify('Attach the supplied sample files to continue.');return false}
  if(to==='upload-preview'&&(state.fields.price!==undefined)&&(!Number.isFinite(Number(state.fields.price))||Number(state.fields.price)<0||state.fields.price.trim()==='')){notify('Enter a price of zero or greater.');return false}return true}
 function render(){const [route,query]=location.hash.slice(1).split('?');const requested=decodeURIComponent(route||'home');if(query&&new URLSearchParams(query).has('search'))state.fields.search=new URLSearchParams(query).get('search');const mobile=state.forcedMobile||innerWidth<=600;let id=requested;
- if((requested==='home'||requested==='explore')&&window.renderMarketplace){window.renderMarketplace(requested,{state,matches,go,action});document.querySelector('#size-toggle').textContent=state.forcedMobile?'Desktop view':'Mobile view';return}
+ if((requested==='home'||requested==='explore'||requested==='saved')&&window.renderMarketplace){window.renderMarketplace(requested,{state,matches,go,action});document.querySelector('#size-toggle').textContent=state.forcedMobile?'Desktop view':'Mobile view';return}
  document.body.dataset.page='supporting';
  if(!scenes.size){
   const host=document.querySelector('#artboard');host.classList.add('native-artboard');

@@ -1,0 +1,32 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/rural-hut.blend",
+      "bytes": 3882296,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "rural-hut.glb",
+      "bytes": 1117400,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "rural-hut-obj.zip",
+      "bytes": 601234,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "rural-hut.fbx",
+      "bytes": 1225164,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 194,
+  "previewPolygons": 9468,
+  "previewTriangles": 21336,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}
