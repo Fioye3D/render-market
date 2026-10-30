@@ -1,0 +1,31 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/aso-oke-stripes.blend",
+      "bytes": 1578176,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "aso-oke-stripes.glb",
+      "bytes": 840812,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "aso-oke-stripes-obj.zip",
+      "bytes": 767130,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "aso-oke-stripes.fbx",
+      "bytes": 850684,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 1,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND.",
+  "bakedBaseColour": true
+}

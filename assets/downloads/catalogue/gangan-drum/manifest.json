@@ -1,0 +1,30 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/gangan-drum.blend",
+      "bytes": 1526712,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "gangan-drum.glb",
+      "bytes": 250284,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "gangan-drum-obj.zip",
+      "bytes": 109744,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "gangan-drum.fbx",
+      "bytes": 253212,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 28,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

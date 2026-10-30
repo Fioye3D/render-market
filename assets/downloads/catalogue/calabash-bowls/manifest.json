@@ -1,0 +1,30 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/calabash-bowls.blend",
+      "bytes": 2826696,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "calabash-bowls.glb",
+      "bytes": 533568,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "calabash-bowls-obj.zip",
+      "bytes": 394463,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "calabash-bowls.fbx",
+      "bytes": 503468,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 3,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

@@ -1,0 +1,30 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/djembe-drum.blend",
+      "bytes": 1605592,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "djembe-drum.glb",
+      "bytes": 315344,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "djembe-drum-obj.zip",
+      "bytes": 184214,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "djembe-drum.fbx",
+      "bytes": 342140,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 33,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

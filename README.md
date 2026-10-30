@@ -6,7 +6,7 @@ RenderMarket explores how 3D artists, animators and digital designers can showca
 
 Created by **Adefioye Favour** · [GitHub](https://github.com/Fioye3D) · [Instagram](https://www.instagram.com/fioye_3d/)
 
-> **Repository scope:** This is the source-code edition, v0.4. Rendered images, font binaries, editable Blender scenes and downloadable 3D files are not included. The complete-project package supplies those resources. Running this repository alone will leave missing media and unavailable 3D downloads.
+> **Local project scope:** The complete media and model files have been restored to this Desktop folder. It now includes rendered images, fonts, editable Blender scenes and downloads. Any earlier code-only archive or GitHub commit requires these restored resources to show the complete prototype.
 
 ## Why this project exists
 
@@ -27,7 +27,7 @@ The interface uses charcoal surfaces, off-white typography, blue controls and la
 | Creator journey | Registration, dashboard, upload, pricing and demo publication screens |
 | Design system | Tokens, component specifications, reference artboards and Figma import source |
 
-The catalogue data describes **27 listings**, including an **Everyday Lagos** collection of ten scenes and props. These counts describe the complete project; the corresponding artwork and models are absent from this code edition.
+The catalogue data describes **27 listings**, including an **Everyday Lagos** collection of ten scenes and props. Artwork and model files are included in this complete local folder.
 
 ## Featured work: Sanctuary Temple
 
@@ -55,7 +55,9 @@ python -m http.server 8765
 
 Open **http://localhost:8765/prototype/**. On Windows, `py -m http.server 8765` is an alternative.
 
-For the full visual experience, first merge the media and model directories from the complete-project package into this folder, preserving their paths. The viewer requires an HTTP server; opening the HTML directly from disk is insufficient.
+On Windows, double-click **Start-Prototype.cmd** to start the preview after it has stopped. Keep its window open. The viewer requires an HTTP server; opening the HTML directly from disk is insufficient.
+
+For a phone on the same Wi-Fi, replace `localhost` with the computer's Wi-Fi IPv4 address, such as `http://10.4.9.145:8765/prototype/`. That address can change. The server binds to all interfaces; Windows Firewall and Wi-Fi isolation may affect access from other devices. A public hosted link is still pending.
 
 ## Repository guide
 
@@ -94,7 +96,7 @@ The design source describes 108 reference artboards, including foundations and s
 
 This is an ongoing portfolio prototype. Creator workflows include artboard-based demonstrations, and the site has no production backend or payment processing. A hosted demo and a published Figma prototype are not yet available.
 
-The complete-project verification reports are retained as development records. Media-integrity and download checks require the omitted assets and cannot pass against this code-only checkout. Accessibility documentation records selected checks and outstanding work, rather than full WCAG certification.
+The complete-project verification reports are retained as development records. After restoring media, all 108 download checks pass in this local folder. Accessibility documentation records selected checks and outstanding work, rather than full WCAG certification.
 
 The Lagos assets are semi-realistic environment studies. Included character designs are static, and their garment fitting and silhouettes need further manual refinement before production use.
 

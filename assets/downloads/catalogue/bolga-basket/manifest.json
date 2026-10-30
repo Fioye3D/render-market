@@ -1,0 +1,30 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/bolga-basket.blend",
+      "bytes": 2035832,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "bolga-basket.glb",
+      "bytes": 5915724,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "bolga-basket-obj.zip",
+      "bytes": 5419859,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "bolga-basket.fbx",
+      "bytes": 6800460,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 144,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

@@ -1,0 +1,30 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/sahel-courtyard.blend",
+      "bytes": 1330328,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "sahel-courtyard.glb",
+      "bytes": 485984,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "sahel-courtyard-obj.zip",
+      "bytes": 174369,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "sahel-courtyard.fbx",
+      "bytes": 408108,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 36,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

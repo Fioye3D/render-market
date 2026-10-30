@@ -1,0 +1,30 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/baobab-study.blend",
+      "bytes": 2097224,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "baobab-study.glb",
+      "bytes": 89268,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "baobab-study-obj.zip",
+      "bytes": 30308,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "baobab-study.fbx",
+      "bytes": 110108,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 25,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

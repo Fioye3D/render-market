@@ -1,0 +1,30 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/jiko-stove.blend",
+      "bytes": 2204900,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "jiko-stove.glb",
+      "bytes": 226316,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "jiko-stove-obj.zip",
+      "bytes": 83700,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "jiko-stove.fbx",
+      "bytes": 192268,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 18,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

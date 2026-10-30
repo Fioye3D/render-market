@@ -1,0 +1,30 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/lagos-kiosk.blend",
+      "bytes": 3310744,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "lagos-kiosk.glb",
+      "bytes": 1082984,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "lagos-kiosk-obj.zip",
+      "bytes": 579908,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "lagos-kiosk.fbx",
+      "bytes": 920556,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 46,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

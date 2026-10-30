@@ -1,0 +1,48 @@
+{
+  "title": "Sanctuary Temple",
+  "source": "User-supplied Sanctuary_kael UPDATED.blend",
+  "originalBytes": 77812390,
+  "preview": "Reduced geometry and vegetation; portable material colours. Original Blender materials retained in the original source.",
+  "previewObjects": 417,
+  "previewPolygons": 1026308,
+  "originalPolygonsBeforeReduction": 13889170,
+  "elapsedSeconds": 390,
+  "camera": {
+    "position": [
+      0,
+      4.5,
+      26
+    ],
+    "target": [
+      0,
+      2.5,
+      0
+    ]
+  },
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "sanctuary-original.blend",
+      "bytes": 77812390,
+      "variant": "original source"
+    },
+    {
+      "format": "GLB",
+      "file": "sanctuary-web.glb",
+      "bytes": 21700144,
+      "variant": "optimized export"
+    },
+    {
+      "format": "OBJ",
+      "file": "sanctuary-obj.zip",
+      "bytes": 50019758,
+      "variant": "optimized export"
+    },
+    {
+      "format": "FBX",
+      "file": "sanctuary-fbx.zip",
+      "bytes": 17311872,
+      "variant": "optimized export"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/earthenware-jar.blend",
+      "bytes": 2362536,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "earthenware-jar.glb",
+      "bytes": 355540,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "earthenware-jar-obj.zip",
+      "bytes": 239518,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "earthenware-jar.fbx",
+      "bytes": 325564,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 7,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

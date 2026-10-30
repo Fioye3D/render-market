@@ -1,0 +1,30 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/coastal-door.blend",
+      "bytes": 3406328,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "coastal-door.glb",
+      "bytes": 1055616,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "coastal-door-obj.zip",
+      "bytes": 539313,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "coastal-door.fbx",
+      "bytes": 887308,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 52,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

@@ -5,3 +5,6 @@
 
 @media(min-width:821px) and (max-height:900px){.file-panel{position:static}}
 @media(max-width:820px){.viewer-toolbar button,.viewer-toolbar select{min-height:44px}.download-link{min-height:62px}}
+
+@media(max-width:600px){main{padding:20px 16px}.viewer-toolbar{flex-wrap:wrap;gap:8px}.model-controls{flex-wrap:wrap;min-width:0}.view-tabs{flex-wrap:wrap}.topbar form{min-width:0}.topbar button{min-height:44px}.title-row>div{min-width:0}h1{overflow-wrap:anywhere}dl{grid-template-columns:minmax(0,1fr)}.section-tabs{flex-wrap:wrap;gap:16px}.section-tabs a{min-height:44px;display:inline-flex;align-items:center}.download-link{gap:12px}.download-size{white-space:nowrap}.related-grid{grid-template-columns:minmax(0,1fr)}footer{flex-wrap:wrap}}
+#canvas-host canvas{touch-action:none;max-width:100%}

@@ -1,11 +1,10 @@
 # Start here
 
-This is the source-code edition of RenderMarket. Images, font binaries and downloadable 3D assets are supplied in the separate complete-project package.
+The complete media has been restored to this folder.
 
-1. Read [README.md](README.md) for scope, setup and limitations.
-2. Merge the complete-project media into this folder if you want to review the full visual prototype.
-3. Run `python -m http.server 8765` from this folder.
-4. Open `http://localhost:8765/prototype/`.
-5. Review [Figma handoff](docs/figma-handoff.md) and [QA notes](docs/qa-log.md).
+1. Open http://localhost:8765/prototype/ while the preview server is running.
+2. If it has stopped, double-click **Start-Prototype.cmd** and keep its window open.
+3. For mobile on the same Wi-Fi, use your computer's Wi-Fi IPv4 address instead of localhost. The current address is http://10.4.9.145:8765/prototype/ and may change.
+4. Search for an asset, open its details and choose Inspect in 3D. Downloads are actual local files.
 
-This is ongoing, assisted portfolio work by Adefioye Favour, separate from the Access Forge competition proposal.
+This is a local prototype. A public hosted address and Figma publication remain pending.

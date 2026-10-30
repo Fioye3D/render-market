@@ -1,0 +1,30 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/danfo-minibus.blend",
+      "bytes": 1391108,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "danfo-minibus.glb",
+      "bytes": 619124,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "danfo-minibus-obj.zip",
+      "bytes": 238505,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "danfo-minibus.fbx",
+      "bytes": 500364,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 33,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

@@ -1,0 +1,33 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/lagos-akara-vendor.blend",
+      "bytes": 6445288,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "lagos-akara-vendor.glb",
+      "bytes": 2312636,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "lagos-akara-vendor-obj.zip",
+      "bytes": 1911539,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "lagos-akara-vendor.fbx",
+      "bytes": 2299820,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 65,
+  "previewPolygons": 33236,
+  "previewTriangles": 62336,
+  "note": "Packed image colour maps and portable PBR settings. Static clothed characters where listed; no rigging or animation. Cutaway scenes are intentionally open for inspection.",
+  "materials": "512px packed image maps; scalar metallic and roughness"
+}

@@ -1,0 +1,30 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/market-handcart.blend",
+      "bytes": 2363876,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "market-handcart.glb",
+      "bytes": 456000,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "market-handcart-obj.zip",
+      "bytes": 163799,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "market-handcart.fbx",
+      "bytes": 384380,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 30,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

@@ -1,0 +1,33 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/lagos-canteen.blend",
+      "bytes": 12480404,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "lagos-canteen.glb",
+      "bytes": 5834676,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "lagos-canteen-obj.zip",
+      "bytes": 3925752,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "lagos-canteen.fbx",
+      "bytes": 5697260,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 351,
+  "previewPolygons": 103526,
+  "previewTriangles": 191232,
+  "note": "Packed image colour maps and portable PBR settings. Static clothed characters where listed; no rigging or animation. Cutaway scenes are intentionally open for inspection.",
+  "materials": "512px packed image maps; scalar metallic and roughness"
+}

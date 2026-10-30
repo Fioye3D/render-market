@@ -1,0 +1,33 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/lagos-classroom.blend",
+      "bytes": 7730576,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "lagos-classroom.glb",
+      "bytes": 3771832,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "lagos-classroom-obj.zip",
+      "bytes": 1937974,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "lagos-classroom.fbx",
+      "bytes": 3294140,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 273,
+  "previewPolygons": 41012,
+  "previewTriangles": 70024,
+  "note": "Packed image colour maps and portable PBR settings. Static clothed characters where listed; no rigging or animation. Cutaway scenes are intentionally open for inspection.",
+  "materials": "512px packed image maps; scalar metallic and roughness"
+}

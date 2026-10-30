@@ -7,3 +7,8 @@
 .m-card .m-save{width:40px;height:40px}.m-filters legend{font-size:13px}.m-option{font-size:13px;min-height:38px}
 .m-compatibility span,.m-compatibility small{font-size:12px}.m-footer{font-size:12px}.m-suggestions{flex-wrap:wrap}
 @container(max-width:760px){.m-save,.m-suggestions button{min-width:44px;min-height:44px}.m-option{min-height:44px}.m-results-header select{min-height:44px}}
+
+/* Compact screens retain readable controls without horizontal overflow. */
+.m-shell{min-width:0}.m-header>*{min-width:0}.m-feature img{max-width:100%}
+@container(max-width:600px){.m-header nav a{display:inline-flex;align-items:center;min-height:44px}.m-section-heading{flex-wrap:wrap;gap:12px}.m-results-header{flex-wrap:wrap}.m-results-header select{margin-left:0}.m-search-hero{width:100%}.m-creators>a{min-width:0}.m-card-meta{flex-wrap:wrap}}
+@container(max-width:360px){.m-grid{grid-template-columns:minmax(0,1fr)}.m-header nav{margin-left:0}.m-hero h1{font-size:32px}.m-feature>div{position:relative;inset:auto;margin:0;border-radius:0}.m-feature img{height:auto}.m-filters{grid-template-columns:minmax(0,1fr)}}

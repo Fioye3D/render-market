@@ -1,0 +1,31 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/woven-mat.blend",
+      "bytes": 2234520,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "woven-mat.glb",
+      "bytes": 616840,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "woven-mat-obj.zip",
+      "bytes": 485496,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "woven-mat.fbx",
+      "bytes": 639292,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 3,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND.",
+  "bakedBaseColour": true
+}

@@ -1,0 +1,30 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/studio-lamp.blend",
+      "bytes": 1472144,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "studio-lamp.glb",
+      "bytes": 120432,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "studio-lamp-obj.zip",
+      "bytes": 41516,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "studio-lamp.fbx",
+      "bytes": 89916,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 4,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+}

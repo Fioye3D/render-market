@@ -1,0 +1,31 @@
+{
+  "downloads": [
+    {
+      "format": "BLEND",
+      "file": "../../../artwork/kente-strip-study.blend",
+      "bytes": 2154432,
+      "variant": "original study"
+    },
+    {
+      "format": "GLB",
+      "file": "kente-strip-study.glb",
+      "bytes": 597960,
+      "variant": "portable export"
+    },
+    {
+      "format": "OBJ",
+      "file": "kente-strip-study-obj.zip",
+      "bytes": 482448,
+      "variant": "portable export"
+    },
+    {
+      "format": "FBX",
+      "file": "kente-strip-study.fbx",
+      "bytes": 625852,
+      "variant": "portable export"
+    }
+  ],
+  "previewObjects": 1,
+  "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND.",
+  "bakedBaseColour": true
+}

@@ -1,0 +1,815 @@
+{
+  "akara-breakfast-pack": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/akara-breakfast-pack.blend",
+        "bytes": 3041196,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "akara-breakfast-pack.glb",
+        "bytes": 902412,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "akara-breakfast-pack-obj.zip",
+        "bytes": 806492,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "akara-breakfast-pack.fbx",
+        "bytes": 926540,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 22,
+    "previewPolygons": 4322,
+    "previewTriangles": 8228,
+    "note": "Packed image colour maps and portable PBR settings. Static clothed characters where listed; no rigging or animation. Cutaway scenes are intentionally open for inspection.",
+    "materials": "512px packed image maps; scalar metallic and roughness"
+  },
+  "aso-oke-stripes": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/aso-oke-stripes.blend",
+        "bytes": 1578176,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "aso-oke-stripes.glb",
+        "bytes": 840812,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "aso-oke-stripes-obj.zip",
+        "bytes": 767130,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "aso-oke-stripes.fbx",
+        "bytes": 850684,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 1,
+    "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND.",
+    "bakedBaseColour": true
+  },
+  "baobab-study": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/baobab-study.blend",
+        "bytes": 2097224,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "baobab-study.glb",
+        "bytes": 89268,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "baobab-study-obj.zip",
+        "bytes": 30308,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "baobab-study.fbx",
+        "bytes": 110108,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 25,
+    "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+  },
+  "bolga-basket": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/bolga-basket.blend",
+        "bytes": 2035832,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "bolga-basket.glb",
+        "bytes": 5915724,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "bolga-basket-obj.zip",
+        "bytes": 5419859,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "bolga-basket.fbx",
+        "bytes": 6800460,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 144,
+    "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+  },
+  "calabash-bowls": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/calabash-bowls.blend",
+        "bytes": 2826696,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "calabash-bowls.glb",
+        "bytes": 533568,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "calabash-bowls-obj.zip",
+        "bytes": 394463,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "calabash-bowls.fbx",
+        "bytes": 503468,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 3,
+    "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+  },
+  "coastal-door": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/coastal-door.blend",
+        "bytes": 3406328,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "coastal-door.glb",
+        "bytes": 1055616,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "coastal-door-obj.zip",
+        "bytes": 539313,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "coastal-door.fbx",
+        "bytes": 887308,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 52,
+    "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+  },
+  "danfo-minibus": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/danfo-minibus.blend",
+        "bytes": 1391108,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "danfo-minibus.glb",
+        "bytes": 619124,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "danfo-minibus-obj.zip",
+        "bytes": 238505,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "danfo-minibus.fbx",
+        "bytes": 500364,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 33,
+    "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+  },
+  "djembe-drum": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/djembe-drum.blend",
+        "bytes": 1605592,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "djembe-drum.glb",
+        "bytes": 315344,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "djembe-drum-obj.zip",
+        "bytes": 184214,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "djembe-drum.fbx",
+        "bytes": 342140,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 33,
+    "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+  },
+  "earthenware-jar": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/earthenware-jar.blend",
+        "bytes": 2362536,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "earthenware-jar.glb",
+        "bytes": 355540,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "earthenware-jar-obj.zip",
+        "bytes": 239518,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "earthenware-jar.fbx",
+        "bytes": 325564,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 7,
+    "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+  },
+  "gangan-drum": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/gangan-drum.blend",
+        "bytes": 1526712,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "gangan-drum.glb",
+        "bytes": 250284,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "gangan-drum-obj.zip",
+        "bytes": 109744,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "gangan-drum.fbx",
+        "bytes": 253212,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 28,
+    "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+  },
+  "jiko-stove": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/jiko-stove.blend",
+        "bytes": 2204900,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "jiko-stove.glb",
+        "bytes": 226316,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "jiko-stove-obj.zip",
+        "bytes": 83700,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "jiko-stove.fbx",
+        "bytes": 192268,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 18,
+    "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+  },
+  "kente-strip-study": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/kente-strip-study.blend",
+        "bytes": 2154432,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "kente-strip-study.glb",
+        "bytes": 597960,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "kente-strip-study-obj.zip",
+        "bytes": 482448,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "kente-strip-study.fbx",
+        "bytes": 625852,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 1,
+    "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND.",
+    "bakedBaseColour": true
+  },
+  "lagos-akara-vendor": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/lagos-akara-vendor.blend",
+        "bytes": 6445288,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "lagos-akara-vendor.glb",
+        "bytes": 2312636,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "lagos-akara-vendor-obj.zip",
+        "bytes": 1911539,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "lagos-akara-vendor.fbx",
+        "bytes": 2299820,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 65,
+    "previewPolygons": 33236,
+    "previewTriangles": 62336,
+    "note": "Packed image colour maps and portable PBR settings. Static clothed characters where listed; no rigging or animation. Cutaway scenes are intentionally open for inspection.",
+    "materials": "512px packed image maps; scalar metallic and roughness"
+  },
+  "lagos-barbershop": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/lagos-barbershop.blend",
+        "bytes": 8915612,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "lagos-barbershop.glb",
+        "bytes": 3626296,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "lagos-barbershop-obj.zip",
+        "bytes": 2896093,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "lagos-barbershop.fbx",
+        "bytes": 3771468,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 162,
+    "previewPolygons": 71200,
+    "previewTriangles": 139808,
+    "note": "Packed image colour maps and portable PBR settings. Static clothed characters where listed; no rigging or animation. Cutaway scenes are intentionally open for inspection.",
+    "materials": "512px packed image maps; scalar metallic and roughness"
+  },
+  "lagos-canteen": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/lagos-canteen.blend",
+        "bytes": 12480404,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "lagos-canteen.glb",
+        "bytes": 5834676,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "lagos-canteen-obj.zip",
+        "bytes": 3925752,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "lagos-canteen.fbx",
+        "bytes": 5697260,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 351,
+    "previewPolygons": 103526,
+    "previewTriangles": 191232,
+    "note": "Packed image colour maps and portable PBR settings. Static clothed characters where listed; no rigging or animation. Cutaway scenes are intentionally open for inspection.",
+    "materials": "512px packed image maps; scalar metallic and roughness"
+  },
+  "lagos-church": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/lagos-church.blend",
+        "bytes": 5792980,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "lagos-church.glb",
+        "bytes": 2360908,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "lagos-church-obj.zip",
+        "bytes": 1428475,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "lagos-church.fbx",
+        "bytes": 2230396,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 193,
+    "previewPolygons": 20202,
+    "previewTriangles": 37388,
+    "note": "Packed image colour maps and portable PBR settings. Static clothed characters where listed; no rigging or animation. Cutaway scenes are intentionally open for inspection.",
+    "materials": "512px packed image maps; scalar metallic and roughness"
+  },
+  "lagos-classroom": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/lagos-classroom.blend",
+        "bytes": 7730576,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "lagos-classroom.glb",
+        "bytes": 3771832,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "lagos-classroom-obj.zip",
+        "bytes": 1937974,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "lagos-classroom.fbx",
+        "bytes": 3294140,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 273,
+    "previewPolygons": 41012,
+    "previewTriangles": 70024,
+    "note": "Packed image colour maps and portable PBR settings. Static clothed characters where listed; no rigging or animation. Cutaway scenes are intentionally open for inspection.",
+    "materials": "512px packed image maps; scalar metallic and roughness"
+  },
+  "lagos-football-field": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/lagos-football-field.blend",
+        "bytes": 3108400,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "lagos-football-field.glb",
+        "bytes": 929540,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "lagos-football-field-obj.zip",
+        "bytes": 615126,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "lagos-football-field.fbx",
+        "bytes": 1012316,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 105,
+    "previewPolygons": 5094,
+    "previewTriangles": 11012,
+    "note": "Packed image colour maps and portable PBR settings. Static clothed characters where listed; no rigging or animation. Cutaway scenes are intentionally open for inspection.",
+    "materials": "512px packed image maps; scalar metallic and roughness"
+  },
+  "lagos-kiosk": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/lagos-kiosk.blend",
+        "bytes": 3310744,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "lagos-kiosk.glb",
+        "bytes": 1082984,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "lagos-kiosk-obj.zip",
+        "bytes": 579908,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "lagos-kiosk.fbx",
+        "bytes": 920556,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 46,
+    "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+  },
+  "lagos-produce-market": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/lagos-produce-market.blend",
+        "bytes": 11354392,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "lagos-produce-market.glb",
+        "bytes": 4404484,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "lagos-produce-market-obj.zip",
+        "bytes": 3419839,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "lagos-produce-market.fbx",
+        "bytes": 4732156,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 239,
+    "previewPolygons": 92238,
+    "previewTriangles": 169788,
+    "note": "Packed image colour maps and portable PBR settings. Static clothed characters where listed; no rigging or animation. Cutaway scenes are intentionally open for inspection.",
+    "materials": "512px packed image maps; scalar metallic and roughness"
+  },
+  "lagos-school": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/lagos-school.blend",
+        "bytes": 7307628,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "lagos-school.glb",
+        "bytes": 2870508,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "lagos-school-obj.zip",
+        "bytes": 1539899,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "lagos-school.fbx",
+        "bytes": 2390332,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 169,
+    "previewPolygons": 36514,
+    "previewTriangles": 56140,
+    "note": "Packed image colour maps and portable PBR settings. Static clothed characters where listed; no rigging or animation. Cutaway scenes are intentionally open for inspection.",
+    "materials": "512px packed image maps; scalar metallic and roughness"
+  },
+  "lagos-suya-spot": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/lagos-suya-spot.blend",
+        "bytes": 6903888,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "lagos-suya-spot.glb",
+        "bytes": 2542960,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "lagos-suya-spot-obj.zip",
+        "bytes": 1860291,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "lagos-suya-spot.fbx",
+        "bytes": 2525052,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 135,
+    "previewPolygons": 35846,
+    "previewTriangles": 67296,
+    "note": "Packed image colour maps and portable PBR settings. Static clothed characters where listed; no rigging or animation. Cutaway scenes are intentionally open for inspection.",
+    "materials": "512px packed image maps; scalar metallic and roughness"
+  },
+  "market-handcart": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/market-handcart.blend",
+        "bytes": 2363876,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "market-handcart.glb",
+        "bytes": 456000,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "market-handcart-obj.zip",
+        "bytes": 163799,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "market-handcart.fbx",
+        "bytes": 384380,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 30,
+    "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+  },
+  "sahel-courtyard": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/sahel-courtyard.blend",
+        "bytes": 1330328,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "sahel-courtyard.glb",
+        "bytes": 485984,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "sahel-courtyard-obj.zip",
+        "bytes": 174369,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "sahel-courtyard.fbx",
+        "bytes": 408108,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 36,
+    "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+  },
+  "studio-lamp": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/studio-lamp.blend",
+        "bytes": 1472144,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "studio-lamp.glb",
+        "bytes": 120432,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "studio-lamp-obj.zip",
+        "bytes": 41516,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "studio-lamp.fbx",
+        "bytes": 89916,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 4,
+    "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND."
+  },
+  "woven-mat": {
+    "downloads": [
+      {
+        "format": "BLEND",
+        "file": "../../../artwork/woven-mat.blend",
+        "bytes": 2234520,
+        "variant": "original study"
+      },
+      {
+        "format": "GLB",
+        "file": "woven-mat.glb",
+        "bytes": 616840,
+        "variant": "portable export"
+      },
+      {
+        "format": "OBJ",
+        "file": "woven-mat-obj.zip",
+        "bytes": 485496,
+        "variant": "portable export"
+      },
+      {
+        "format": "FBX",
+        "file": "woven-mat.fbx",
+        "bytes": 639292,
+        "variant": "portable export"
+      }
+    ],
+    "previewObjects": 3,
+    "note": "Portable exports use simplified materials; original procedural materials are retained in BLEND.",
+    "bakedBaseColour": true
+  }
+}
