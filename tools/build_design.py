@@ -6,21 +6,22 @@ from functools import lru_cache
 
 ROOT=Path(__file__).resolve().parents[1]
 for d in ['design/screens','design/wireframes','design/figma-plugin','assets/screenshots','assets/logo','docs','research','prototype']:(ROOT/d).mkdir(parents=True,exist_ok=True)
-BG='#101112'; SUR='#191B1E'; PANEL='#202327'; LINE='#3D424A'; INK='#F5F3EE'; MUT='#B2B7C1'; ACC='#6568EA'; ACTION='#5053CA'; SOFT='#B9BBFF'; GREEN='#A9D7BD'
+BG='#101112'; SUR='#191B1E'; PANEL='#202327'; LINE='#3D424A'; INK='#F5F3EE'; MUT='#B2B7C1'; ACC='#285c82'; ACTION='#285c82'; SOFT='#c4ccd3'; GREEN='#bec8c2'
 SCENES=[]; current=None
 
 def frame(id,title,w=1440,h=1120,page='High fidelity'):
  global current
  current={'id':id,'title':title,'width':w,'height':h,'page':page,'background':BG,'nodes':[],'hotspots':[]};SCENES.append(current);return current
 def rect(x,y,w,h,fill=SUR,r=0,stroke=None,name='Surface'):
+ r=0
  n=dict(type='rect',x=x,y=y,w=w,h=h,fill=fill,r=r,name=name)
  if stroke:n['stroke']=stroke
  current['nodes'].append(n);return n
 @lru_cache(maxsize=64)
-def measure_font(family,size):return ImageFont.truetype(str(ROOT/'assets/fonts'/(family+'.ttf')),size)
+def measure_font(family,size):return ImageFont.truetype(r'C:\Windows\Fonts\arial.ttf',size)
 
 def wrap_text(s,width,size):
- font=measure_font('SpaceGrotesk' if size>=24 else 'Inter',size);lines=[];line=''
+ font=measure_font('Arial' if size>=24 else 'Arial',size);lines=[];line=''
  for word in s.split():
   proposed=(line+' '+word).strip()
   if line and font.getlength(proposed)>width:lines.append(line);line=word
@@ -29,11 +30,11 @@ def wrap_text(s,width,size):
  return '\n'.join(lines)
 
 def txt(x,y,s,size=16,color=INK,weight=400,w=None,name=None):
- n=dict(type='text',x=x,y=y,text=s,size=size,color=color,weight=weight,name=name or s[:52],font='Space Grotesk' if size>=24 else 'Inter')
+ n=dict(type='text',x=x,y=y,text=s,size=size,color=color,weight=weight,name=name or s[:52],font='Arial' if size>=24 else 'Arial')
  if w:n['w']=w;n['text']=wrap_text(s,w,size)
  current['nodes'].append(n);return n
 def line(x,y,w):rect(x,y,w,1,LINE,name='Divider')
-def art(x,y,w,h,file,r=12):current['nodes'].append(dict(type='image',x=x,y=y,w=w,h=h,file=file,r=r,name=file.replace('-',' ')+' / original procedural preview'))
+def art(x,y,w,h,file,r=12):current['nodes'].append(dict(type='image',x=x,y=y,w=w,h=h,file=file,r=0,name=file.replace('-',' ')+' / original procedural preview'))
 def hot(x,y,w,h,label,to=None,action=None):
  n=dict(x=x,y=y,w=w,h=h,label=label)
  if to:n['to']=to
@@ -47,7 +48,7 @@ def button(x,y,w,label,to=None,kind='primary',action=None):
 def link(x,y,label,to,w=130):txt(x,y,label,14,MUT,500);hot(x,y-10,w,44,label,to)
 def pill(x,y,label,selected=False,w=None):
  w=w or 24+len(label)*7
- rect(x,y,w,32,'#292B44' if selected else SUR,16,SOFT if selected else LINE)
+ rect(x,y,w,32,'#26333d' if selected else SUR,16,SOFT if selected else LINE)
  txt(x+12,y+9,label,12,SOFT if selected else MUT,500);return w
 def inputbox(x,y,w,label,value='',placeholder='',key=None,h=52):
  txt(x,y,label,14,INK,500);rect(x,y+27,w,h,BG,8,LINE,'Input / '+label)
@@ -90,7 +91,7 @@ for a in ASSETS:a['creatorRoute']=creator_route(a)
 def money(v):return 'Project files' if v is None else '₦'+f'{v:,}'
 def card(x,y,w,a,small=False):
  ph=round(w*.7);rect(x,y,w,ph+116,SUR,12,LINE,'Asset card / '+a['title']);art(x+1,y+1,w-2,ph,a['file'],11)
- rect(x+w-46,y+12,34,34,'#17191D',17,LINE);txt(x+w-36,y+20,'♡',18,INK);hot(x+w-48,y+7,44,44,'Save '+a['title'],action='save:'+a['id'])
+ rect(x+w-46,y+12,34,34,'#17191D',17,LINE);txt(x+w-36,y+20,'+',18,INK);hot(x+w-48,y+7,44,44,'Save '+a['title'],action='save:'+a['id'])
  txt(x+16,y+ph+17,a['title'],14 if w<300 else 16,INK,500,w-32)
  place=a.get('placeLabel',{'terra':'Mali','orbit':'Lagos','loop':'Ghana','kora':'Yoruba reference','ayo':'Yoruba reference','lamp':'Product study'}.get(a['id'],''))
  txt(x+16,y+ph+61,a['creator']+' · '+place,11 if w<300 else 12,MUT);txt(x+16,y+ph+92,'BLEND · GLB',10 if w<300 else 11,MUT,500)
@@ -123,7 +124,7 @@ featured_ids=['canteen','barbershop','market','suya','church','school','classroo
 for i,key in enumerate(featured_ids):card(56+(i%4)*338,1013+(i//4)*370,314,next(a for a in ASSETS if a['id']==key))
 heading(56,1795,'Creator profiles');txt(56,1848,'Browse each creator’s catalogue.',14,MUT)
 for i,(maker,initials,speciality,to) in enumerate([('Adefioye Favour','AF','Sanctuary Temple','creator:owner'),('Nia Forms','NF','Spaces & objects','creator'),('Sefi Materials','SM','Procedural textiles','creator:sefi')]):
- x=56+i*452;rect(x,1890,428,122,SUR,12,LINE);rect(x+22,1917,54,54,'#303149',27);txt(x+35,1935,initials,16,SOFT,600);txt(x+96,1917,maker,20,INK,500);txt(x+96,1951,speciality,13,MUT);txt(x+387,1923,'↗',20,SOFT);hot(x,1890,428,122,'Visit '+maker,to)
+ x=56+i*452;rect(x,1890,428,122,SUR,12,LINE);rect(x+22,1917,54,54,'#26333d',27);txt(x+35,1935,initials,16,SOFT,600);txt(x+96,1917,maker,20,INK,500);txt(x+96,1951,speciality,13,MUT);txt(x+387,1923,'↗',20,SOFT);hot(x,1890,428,122,'Visit '+maker,to)
 rect(56,2055,1328,146,'#20222A',16);txt(88,2087,'Publish your work',31,INK,500);txt(88,2142,'Prepare files, previews and licensing in one listing workflow.',15,MUT);button(1116,2104,236,'Open creator studio  →','register')
 foot(2252);current['height']=2340
 
@@ -158,7 +159,7 @@ for a in ASSETS:
  txt(356,835,'BLENDER 4.2 / EDITABLE SOURCE',11,SOFT,600)
  eyebrow(930,187,'Everyday Lagos / '+a['cat'] if a.get('collection') else a['tag']);txt(930,221,a['title'].split(' / ')[0],42 if not a.get('featured') else 36,INK,500)
  txt(930,278,a['title'].split(' / ')[1] if ' / 'in a['title'] else 'Forest temple environment',25,INK,500)
- rect(930,328,454,76,SUR,10,LINE);rect(946,344,44,44,'#303149',22);txt(956,358,''.join(p[0] for p in a['creator'].split()),14,SOFT,600);txt(1006,344,a['creator'],17,INK,500);txt(1006,375,'View creator storefront  ↗',12,MUT);hot(930,328,454,76,'By '+a['creator']+'  ↗',creator_route(a))
+ rect(930,328,454,76,SUR,10,LINE);rect(946,344,44,44,'#26333d',22);txt(956,358,''.join(p[0] for p in a['creator'].split()),14,SOFT,600);txt(1006,344,a['creator'],17,INK,500);txt(1006,375,'View creator storefront  ↗',12,MUT);hot(930,328,454,76,'By '+a['creator']+'  ↗',creator_route(a))
  txt(930,439,money(a['price']),35,INK,500);txt(930,489,'Original source and optimized exports' if a.get('featured') else 'Illustrative price · NGN',13,MUT)
  rect(930,536,454,126,SUR,12,LINE);txt(950,555,'Download formats' if a.get('featured') else 'Standard / one end project',17,INK,500)
  txt(950,594,'BLEND / GLB / OBJ / FBX' if a.get('featured') else 'Personal or commercial project use.',13,MUT);txt(950,622,'Commercial-use terms not specified.' if a.get('featured') else 'No standalone redistribution.',13,MUT)
@@ -218,7 +219,7 @@ def studio(title,sub,id='dashboard',h=1100):
  frame(id,title,h=h);rect(0,0,256,h,SUR);mark(28,30);txt(69,33,'RenderMarket',20,INK,600);txt(28,95,'CREATOR STUDIO',11,MUT,600)
  for i,(name,to) in enumerate([('Overview','dashboard'),('My listings','listings'),('Upload asset','upload-1'),('View marketplace','home')]):
   y=146+i*62
-  if (to==id or (id.startswith('upload') and to=='upload-1')):rect(16,y-12,224,48,'#303149',8)
+  if (to==id or (id.startswith('upload') and to=='upload-1')):rect(16,y-12,224,48,'#26333d',8)
   txt(32,y,name,15,INK if to==id else MUT,500);hot(16,y-12,224,48,name,to)
  txt(28,h-108,'DEMO WORKSPACE',11,SOFT,600);txt(28,h-77,'No account required',12,MUT)
  txt(304,36,'Studio / Nia Forms',13,MUT);txt(1100,36,'Sample creator session',12,SOFT)
@@ -227,7 +228,7 @@ def studio(title,sub,id='dashboard',h=1100):
 for id in ['dashboard','listings']:
  studio('Creator dashboard' if id=='dashboard' else 'My listings','Manage listings and drafts. Sample workspace.',id)
  button(1170,133,214,'Upload an asset  +','upload-1')
- for i,(val,label) in enumerate([('3','Sample listings'),('1','Draft to finish'),('—','No sales connected')]):
+ for i,(val,label) in enumerate([('3','Sample listings'),('1','Draft to finish'),(' / ','No sales connected')]):
   x=304+i*368;rect(x,271,344,134,SUR,12,LINE);txt(x+24,296,val,38,INK,500);txt(x+24,360,label,14,MUT)
  txt(304,465,'Your listings',24,INK,500);txt(304,510,'ASSET',11,MUT,600);txt(902,510,'STATUS',11,MUT,600);txt(1145,510,'SAMPLE PRICE',11,MUT,600)
  for i,a in enumerate([next(a for a in ASSETS if a['id']==key)for key in ['terra','loop','lamp']]):
@@ -271,7 +272,7 @@ button(304,949,164,'← Asset basics','upload-1','secondary');button(707,949,247
 
 upload('upload-3','Pricing and licence','Upload flow / step 3 of 3. Illustrative prices and example licence only.',2)
 inputbox(304,361,650,'Price in NGN','24000',key='price')
-txt(304,474,'Example licence',14,INK,500);rect(304,508,650,154,'#272940',12,SOFT)
+txt(304,474,'Example licence',14,INK,500);rect(304,508,650,154,'#26333d',12,SOFT)
 txt(329,534,'Standard / one end project',20,INK,500);txt(329,581,'Personal or commercial project use.',14,MUT);txt(329,609,'No redistribution of the standalone source files.',14,MUT)
 rect(304,712,650,96,SUR,8,LINE);txt(328,736,'Before a real marketplace launches',15,INK,600);txt(328,766,'Licence terms need legal review and creator agreement.',14,MUT)
 art(1002,361,382,286,'sahel-courtyard',12);txt(1002,676,'Courtyard / Earthen scene kit',23,INK,500);txt(1002,720,'Nia Forms · sample listing',14,MUT)
@@ -314,7 +315,7 @@ frame('foundations','01 / Foundations',h=1360,page='Foundations');heading(56,70,
 colors=[('Canvas',BG),('Surface',SUR),('Raised',PANEL),('Border',LINE),('Text',INK),('Muted',MUT),('Action',ACTION),('Accent',SOFT)]
 for i,(name,c) in enumerate(colors):
  x=56+i*168;rect(x,190,144,112,c,12,LINE);txt(x,322,name,16,INK,500);txt(x,350,c,12,MUT)
-line(56,403,1328);eyebrow(56,438,'Type / Space Grotesk + Inter')
+line(56,403,1328);eyebrow(56,438,'Type / Arial + Arial')
 for i,(size,s) in enumerate([(62,'Give your next world a head start.'),(36,'Thoughtful details. Clear decisions.'),(24,'A system with room to create.'),(16,'Readable body copy and useful asset metadata.'),(14,'UI labels / compact and direct'),(12,'Captions / sample content disclosures')]):
  y=487+sum([s+24 for s,_ in [(62,''),(36,''),(24,''),(16,''),(14,''),(12,'')]][:i]);txt(56,y,s,size,INK,500 if size>16 else 400);txt(1205,y,str(size)+' px',14,MUT)
 line(56,945,1328);eyebrow(56,982,'8 px rhythm / 4 px substeps')
@@ -328,10 +329,10 @@ eyebrow(56,196,'Actions');button(56,234,190,'Explore assets','explore');button(2
 rect(484,234,190,48,'#303238',8);txt(502,249,'Unavailable',14,'#878B94',600)
 rect(698,230,198,56,BG,12,SOFT);button(702,234,190,'Keyboard focus','explore')
 eyebrow(56,344,'Inputs / default / error');inputbox(56,386,406,'Asset title',placeholder='Name your asset')
-inputbox(494,386,406,'Price in NGN','-20');rect(494,413,406,52,BG,8,'#F1B1A4');txt(494,485,'Enter a price of zero or greater.',13,'#F1B1A4')
+inputbox(494,386,406,'Price in NGN','-20');rect(494,413,406,52,BG,8,'#d4c3ba');txt(494,485,'Enter a price of zero or greater.',13,'#d4c3ba')
 eyebrow(56,571,'Asset card');card(56,608,342,ASSETS[1])
 eyebrow(470,571,'Feedback / state is also written in words')
-for i,(title,body,c) in enumerate([('Draft saved','Your demo details stay in this browser session.',GREEN),('No matching assets','Try another term or reset your filters.',MUT),('Upload unavailable','Use the sample files to continue this prototype.','#F1B1A4')]):
+for i,(title,body,c) in enumerate([('Draft saved','Your demo details stay in this browser session.',GREEN),('No matching assets','Try another term or reset your filters.',MUT),('Upload unavailable','Use the sample files to continue this prototype.','#d4c3ba')]):
  y=608+i*128;rect(470,y,880,104,SUR,10,LINE);txt(494,y+22,title,18,c,500);txt(494,y+60,body,14,MUT)
 txt(56,1107,'48 px action height · 8 px control radius · 12 px card radius · restrained borders, no decorative glow',14,MUT)
 
@@ -354,7 +355,7 @@ for kind,title in [('home','Home'),('explore','Explore'),('detail:terra','Asset 
  # Preserve image geometry using original nodes.
  for n,o in zip(s['nodes'],source['nodes']):
   if o['type']=='image':n.update(x=o['x'],y=o['y'],w=o['w'],h=o['h'])
-  elif n['type']=='text':n['color']='#363A3A';n['font']='Inter'
+  elif n['type']=='text':n['color']='#363A3A';n['font']='Arial'
   elif n['type']=='rect':n['fill']='#FFFFFF' if n.get('fill')!=BG else '#F1F1EF';n['stroke']='#A7ABA8'
   elif n['type']=='vector':n['fill']='#363A3A'
  SCENES.append(s)
@@ -396,7 +397,7 @@ txt(20,1480,'Included source files',22,INK,500);rect(20,1524,350,112,SUR,12,LINE
 eyebrow(20,1680,'Place and interpretation');txt(20,1712,'Mali / Sahel-inspired architecture',14,INK);txt(20,1744,'Original study, not a heritage reconstruction.',12,MUT)
 mobile_bottom()
 
-TOKENS=dict(meta=dict(name='RenderMarket',version='0.4.0',status='reference-informed design iteration, created 2026-10-29'),color=dict(canvas=BG,surface=SUR,raised=PANEL,border=LINE,text=INK,muted=MUT,action=ACTION,accent=SOFT,success=GREEN,error='#F1B1A4'),typography=dict(heading='Space Grotesk',body='Inter',scale=[12,14,16,18,24,36,44,62]),spacing=[4,8,12,16,24,32,48,64],radius=dict(control=8,card=12,hero=16),layout=dict(desktop=1440,mobile=390,desktopMargin=56,mobileMargin=20,gutter=24))
+TOKENS=dict(meta=dict(name='RenderMarket',version='0.4.0',status='reference-informed design iteration, created 2026-10-29'),color=dict(canvas=BG,surface=SUR,raised=PANEL,border=LINE,text=INK,muted=MUT,action=ACTION,accent=SOFT,success=GREEN,error='#d4c3ba'),typography=dict(heading='Arial',body='Arial',scale=[12,14,16,18,24,36,44,62]),spacing=[4,8,12,16,24,32,48,64],radius=dict(control=8,card=12,hero=16),layout=dict(desktop=1440,mobile=390,desktopMargin=56,mobileMargin=20,gutter=24))
 (ROOT/'design/design-tokens.json').write_text(json.dumps(TOKENS,indent=2))
 (ROOT/'design/scenes.json').write_text(json.dumps(SCENES,ensure_ascii=False,indent=2),encoding='utf-8')
 (ROOT/'prototype/scenes.js').write_text('window.RM_SCENES='+json.dumps(SCENES,ensure_ascii=False)+';\nwindow.RM_ASSETS='+json.dumps(ASSETS,ensure_ascii=False)+';',encoding='utf-8')

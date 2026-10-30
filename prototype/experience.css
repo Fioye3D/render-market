@@ -1,0 +1,11 @@
+/* Restrained, square-edged interface. No decorative animation. */
+*,*::before,*::after{box-shadow:none!important;text-shadow:none!important;border-radius:0!important;animation:none!important;transition:none!important;backdrop-filter:none!important}
+html{background:#101112;color:#f5f3ee;font-family:Arial,Helvetica,sans-serif;scroll-behavior:auto}
+body,input,button,select,textarea{font-family:Arial,Helvetica,sans-serif}
+svg text{font-family:Arial,Helvetica,sans-serif!important}
+.policy-links{display:flex;flex-wrap:wrap;justify-content:center;gap:24px;padding:24px;border-top:1px solid #3d424a;font-size:13px;color:#b2b7c1}.policy-links a{color:inherit;padding:8px}
+.rm-image-pending{position:relative;background:#20272c}.rm-image-pending>img{opacity:0}
+.rm-image-state{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:12px;padding:24px;background:#20272c;color:#c4ccd3;font:12px Arial,sans-serif;pointer-events:none}
+.rm-image-state i{display:block;height:12px;background:#38434b;width:64%}.rm-image-state i:nth-child(2){width:42%}.rm-image-state i:nth-child(3){width:78%;height:48px}
+.rm-media-error>img{visibility:hidden}
+.policy-page{max-width:800px;margin:auto;padding:40px 24px;line-height:1.75}.policy-page a{color:#c4ccd3}.policy-page h1{font-size:36px;line-height:1.2}.policy-page h2{font-size:22px;margin-top:32px}.policy-page p{color:#b2b7c1}

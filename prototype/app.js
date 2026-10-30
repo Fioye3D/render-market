@@ -23,24 +23,24 @@ function transformed(source){const s=JSON.parse(JSON.stringify(source));const id
   });
  const count=s.nodes.find(n=>n.name==='Results count');if(count)count.text=list.length+' asset'+(list.length===1?'':'s')+(state.category!=='All assets'?' / '+state.category:'');
  const sortLabel=s.nodes.find(n=>n.text==='Sort: Featured  ↓');if(sortLabel)sortLabel.text=state.sort==='price-asc'?'Sort: Price, low to high  ↓':state.sort==='price-desc'?'Sort: Price, high to low  ↓':'Sort: Featured  ↓';
- ['All assets','3D models','Materials','Environments'].forEach((label,i)=>{const box=s.nodes.find(n=>n.type==='rect'&&n.x===56&&n.y===554+i*43);if(box)box.fill=state.category===label?'#6568EA':'#101112';});
+ ['All assets','3D models','Materials','Environments'].forEach((label,i)=>{const box=s.nodes.find(n=>n.type==='rect'&&n.x===56&&n.y===554+i*43);if(box)box.fill=state.category===label?'#285c82':'#101112';});
  const prices=['Any price','Under ₦10,000','₦10,000 and above'];s.nodes.forEach(n=>{const i=prices.findIndex(p=>n.text==='○  '+p);if(i>=0)n.text=(state.price===i?'●  ':'○  ')+prices[i]});
  ['All places','Nigeria','Ghana','Mali'].forEach(label=>{const n=s.nodes.find(n=>n.text==='○  '+label);if(n)n.text=(state.region===label?'●  ':'○  ')+label});
   const mobileCount=s.nodes.find(n=>n.name==='Mobile results count');if(mobileCount)mobileCount.text=list.length+' result'+(list.length===1?'':'s')+' · '+state.category;
-  if(!list.length)s.nodes.push({type:'text',x:x0,y:y0+56,text:id==='saved'?'Nothing saved yet. Explore assets and use a save button.':mobile?'No matches. Try a new term or reset filters.':'No matches. Try another search or reset your filters.',size:mobile?14:19,color:'#B2B7C1',font:'Inter',weight:400});
+  if(!list.length)s.nodes.push({type:'text',x:x0,y:y0+56,text:id==='saved'?'Nothing saved yet. Explore assets and use a save button.':mobile?'No matches. Try a new term or reset filters.':'No matches. Try another search or reset your filters.',size:mobile?14:19,color:'#B2B7C1',font:'Arial',weight:400});
  }
  if(id==='upload-preview'){
   const title=state.fields.title;if(title){const texts=s.nodes.filter(n=>n.type==='text');const a=texts.find(n=>n.text==='Courtyard /'),b=texts.find(n=>n.text==='Earthen scene kit');if(a)a.text=title.split(' / ')[0];if(b)b.text=title.split(' / ')[1]||'';}
   const p=s.nodes.find(n=>n.text==='₦24,000 · Standard licence');if(p&&state.fields.price)p.text='₦'+Number(state.fields.price).toLocaleString('en-NG')+' · Standard licence';
  }
- s.nodes.forEach((n,i)=>{if(n.name&&n.name.startsWith('Asset card /')){const a=RM_ASSETS.find(a=>n.name==='Asset card / '+a.title);if(a&&s.nodes[i+3])s.nodes[i+3].text=state.saved.has(a.id)?'♥':'♡';}});
+ s.nodes.forEach((n,i)=>{if(n.name&&n.name.startsWith('Asset card /')){const a=RM_ASSETS.find(a=>n.name==='Asset card / '+a.title);if(a&&s.nodes[i+3])s.nodes[i+3].text=state.saved.has(a.id)?'-':'+';}});
  return s;
 }
 function draw(s){let out=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${s.width} ${s.height}" aria-hidden="true" focusable="false"><rect width="100%" height="100%" fill="${s.background}"/>`;
- s.nodes.forEach((n,i)=>{const {x,y}=n;if(n.type==='rect')out+=`<rect x="${x}" y="${y}" width="${n.w}" height="${n.h}" rx="${n.r||0}" fill="${n.fill}" stroke="${n.stroke||'none'}"/>`;
+ s.nodes.forEach((n,i)=>{const {x,y}=n;if(n.type==='rect')out+=`<rect x="${x}" y="${y}" width="${n.w}" height="${n.h}" rx="0" fill="${n.fill}" stroke="${n.stroke||'none'}"/>`;
  else if(n.type==='text')out+=`<text x="${x}" y="${y+n.size*.83}" font-family="${n.font},Arial,sans-serif" font-size="${n.size}" font-weight="${n.weight}" fill="${n.color}">${n.text.split('\n').map((t,j)=>`<tspan x="${x}" dy="${j?n.size*1.2:0}">${esc(t)}</tspan>`).join('')}</text>`;
  else if(n.type==='vector')out+=`<path d="${n.path}" fill="${n.fill}" fill-rule="evenodd" transform="translate(${x},${y}) scale(${n.w/28})"/>`;
- else if(n.type==='image')out+=`<defs><clipPath id="im${i}"><rect x="${x}" y="${y}" width="${n.w}" height="${n.h}" rx="${n.r}"/></clipPath></defs><image x="${x}" y="${y}" width="${n.w}" height="${n.h}" href="../assets/${n.w<500?'thumbnails/'+n.file+'.webp':'previews/'+n.file+'-960.webp'}" preserveAspectRatio="xMidYMid slice" clip-path="url(#im${i})"/>`;
+ else if(n.type==='image')out+=`<defs><clipPath id="im${i}"><rect x="${x}" y="${y}" width="${n.w}" height="${n.h}" rx="0"/></clipPath></defs><image x="${x}" y="${y}" width="${n.w}" height="${n.h}" href="../assets/${n.w<500?'thumbnails/'+n.file+'.webp':'previews/'+n.file+'-960.webp'}" preserveAspectRatio="xMidYMid slice" clip-path="url(#im${i})"/>`;
  });return out+'</svg>'}
 function style(el,r,s){Object.assign(el.style,{left:r.x/s.width*100+'%',top:r.y/s.height*100+'%',width:r.w/s.width*100+'%',height:r.h/s.height*100+'%'})}
 function action(a){if(a.startsWith('save:')){const id=a.split(':')[1];if(state.saved.has(id)){state.saved.delete(id);notify('Removed from your sample collection.')}else{state.saved.add(id);notify('Saved to this prototype session.')}render();return;}
@@ -67,7 +67,7 @@ function render(){const [route,query]=location.hash.slice(1).split('?');const re
  const scale=el.getBoundingClientRect().width/s.width;
  (s.inputs||[]).forEach(r=>{const input=document.createElement(r.multiline?'textarea':'input');input.setAttribute('aria-label',r.label);input.name=r.key;input.value=state.fields[r.key]??r.value;input.placeholder=r.placeholder;style(input,r,s);input.style.fontSize=(14*scale)+'px';input.style.padding=(r.multiline?12*scale+'px':'0')+' '+14*scale+'px';input.oninput=()=>{state.fields[r.key]=input.value;el.querySelectorAll('[name="'+r.key+'"]').forEach(other=>{if(other!==input)other.value=input.value})};input.onkeydown=e=>{if(e.key==='Enter'&&r.key==='search'){e.preventDefault();action('search')}};el.append(input)});
  (s.selects||[]).forEach(r=>{const select=document.createElement('select');select.setAttribute('aria-label',r.label);r.options.forEach(([value,label])=>{const option=document.createElement('option');option.value=value;option.textContent=label;select.append(option)});select.value=state[r.key];style(select,r,s);select.style.fontSize=14*scale+'px';select.style.padding='0 '+14*scale+'px';select.onchange=()=>{state[r.key]=select.value;render()};el.append(select)});
- document.querySelector('#screen-title').textContent=s.title;document.title=s.title+' — RenderMarket';document.querySelector('#size-toggle').textContent=state.forcedMobile?'Desktop view':'Mobile view';
+ document.querySelector('#screen-title').textContent=s.title;document.title=s.title+'  /  RenderMarket';document.querySelector('#size-toggle').textContent=state.forcedMobile?'Desktop view':'Mobile view';
 }
 document.querySelector('#size-toggle').onclick=()=>{state.forcedMobile=!state.forcedMobile;render()};document.querySelector('#close-menu').onclick=()=>document.querySelector('#menu-dialog').close();document.querySelectorAll('dialog a').forEach(a=>a.onclick=()=>document.querySelector('#menu-dialog').close());
 document.querySelector('.skip').onclick=e=>{e.preventDefault();document.querySelector('#artboard').focus();document.querySelector('#artboard').scrollIntoView()};

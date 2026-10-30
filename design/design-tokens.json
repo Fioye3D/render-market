@@ -11,14 +11,14 @@
     "border": "#3D424A",
     "text": "#F5F3EE",
     "muted": "#B2B7C1",
-    "action": "#5053CA",
-    "accent": "#B9BBFF",
-    "success": "#A9D7BD",
-    "error": "#F1B1A4"
+    "action": "#285c82",
+    "accent": "#c4ccd3",
+    "success": "#bec8c2",
+    "error": "#d4c3ba"
   },
   "typography": {
-    "heading": "Space Grotesk",
-    "body": "Inter",
+    "heading": "Arial",
+    "body": "Arial",
     "scale": [
       12,
       14,
@@ -41,9 +41,9 @@
     64
   ],
   "radius": {
-    "control": 8,
-    "card": 12,
-    "hero": 16
+    "control": 0,
+    "card": 0,
+    "hero": 0
   },
   "layout": {
     "desktop": 1440,
