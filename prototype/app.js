@@ -1,5 +1,15 @@
 /* Design prototype. Local files/viewer use HTTP; accounts and payments are simulated. */
-const scenes=new Map(RM_SCENES.map(s=>[s.id,s]));
+const scenes=new Map();let sceneRequest;
+function loadSupportingScenes(){
+ if(scenes.size)return Promise.resolve();
+ if(sceneRequest)return sceneRequest;
+ sceneRequest=new Promise((resolve,reject)=>{
+  const script=document.createElement('script');script.src='scenes.js';script.async=true;
+  script.onload=()=>{RM_SCENES.forEach(s=>scenes.set(s.id,s));resolve()};
+  script.onerror=()=>{script.remove();sceneRequest=null;reject(Error('Supporting screens could not load.'))};
+  document.head.append(script);
+ });return sceneRequest;
+}
 const state={saved:new Set(),fields:{},category:'All assets',region:'All places',price:0,sort:'featured',forcedMobile:false,files:false};
 let currentScene, toastTimer;
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -60,6 +70,11 @@ function validate(to){if(to==='upload-2'&&!(state.fields.title??'Courtyard / Ear
  if(to==='upload-preview'&&(state.fields.price!==undefined)&&(!Number.isFinite(Number(state.fields.price))||Number(state.fields.price)<0||state.fields.price.trim()==='')){notify('Enter a price of zero or greater.');return false}return true}
 function render(){const [route,query]=location.hash.slice(1).split('?');const requested=decodeURIComponent(route||'home');if(query&&new URLSearchParams(query).has('search'))state.fields.search=new URLSearchParams(query).get('search');const mobile=state.forcedMobile||innerWidth<=600;let id=requested;
  if((requested==='home'||requested==='explore')&&window.renderMarketplace){window.renderMarketplace(requested,{state,matches,go,action});document.querySelector('#size-toggle').textContent=state.forcedMobile?'Desktop view':'Mobile view';return}
+ if(!scenes.size){
+  const host=document.querySelector('#artboard');host.classList.add('native-artboard');
+  host.innerHTML='<section class="route-loading" role="status" aria-busy="true"><h1>Loading workspace</h1><div class="route-skeleton"><span></span><span></span><span></span></div></section>';
+  loadSupportingScenes().then(render).catch(()=>{host.innerHTML='<section class="route-loading" role="alert"><h1>Connection interrupted</h1><p>Reload to retry, or return to the asset library.</p><a href="#explore">Explore assets</a></section>'});return;
+ }
  if(mobile&&scenes.has('mobile-'+requested))id='mobile-'+requested;
  const src=scenes.get(id)||scenes.get('home');currentScene=transformed(src);const s=currentScene;const el=document.querySelector('#artboard');el.classList.remove('native-artboard');el.classList.toggle('mobile',s.width===390);el.innerHTML=draw(s);el.setAttribute('aria-label',s.title);
  const description=document.createElement('section');description.className='sr-only';description.innerHTML='<h1>'+esc(s.title)+'</h1>'+s.nodes.filter(n=>n.type==='text').map(n=>'<p>'+esc(n.text)+'</p>').join('');el.append(description);
