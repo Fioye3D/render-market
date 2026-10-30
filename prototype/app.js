@@ -4,8 +4,8 @@ function loadSupportingScenes(){
  if(scenes.size)return Promise.resolve();
  if(sceneRequest)return sceneRequest;
  sceneRequest=new Promise((resolve,reject)=>{
-  const script=document.createElement('script');script.src='scenes.js';script.async=true;
-  script.onload=()=>{RM_SCENES.forEach(s=>scenes.set(s.id,s));resolve()};
+  const script=document.createElement('script');script.src='scenes.js?v=20261030-blankfix1';script.async=true;
+  script.onload=()=>{try{if(!Array.isArray(window.RM_SCENES))throw Error('Screen data unavailable');window.RM_SCENES.forEach(s=>scenes.set(s.id,s));resolve()}catch(error){sceneRequest=null;reject(error)}};
   script.onerror=()=>{script.remove();sceneRequest=null;reject(Error('Supporting screens could not load.'))};
   document.head.append(script);
  });return sceneRequest;
@@ -88,3 +88,5 @@ document.querySelector('#size-toggle').onclick=()=>{state.forcedMobile=!state.fo
 document.querySelector('.skip').onclick=e=>{e.preventDefault();document.querySelector('#artboard').focus();document.querySelector('#artboard').scrollIntoView()};
 const filterDialog=document.createElement('dialog');filterDialog.id='filter-dialog';filterDialog.setAttribute('aria-label','Filter by asset type');filterDialog.innerHTML='<h2>Find your asset type</h2>'+['All assets','3D models','Materials','Environments'].map(c=>'<button type="button" data-category="'+c+'" style="display:block;width:100%;margin-top:12px">'+c+'</button>').join('')+'<button type="button" id="close-filter">Close filters</button>';document.body.append(filterDialog);filterDialog.querySelectorAll('[data-category]').forEach(b=>b.onclick=()=>{state.category=b.dataset.category;filterDialog.close();render();notify('Filter: '+state.category)});filterDialog.querySelector('#close-filter').onclick=()=>filterDialog.close();
 addEventListener('hashchange',()=>{render();scrollTo(0,0);document.querySelector('#artboard').focus({preventScroll:true})});let viewportWidth=innerWidth,resizeTimer;addEventListener('resize',()=>{if(innerWidth===viewportWidth)return;viewportWidth=innerWidth;clearTimeout(resizeTimer);resizeTimer=setTimeout(render,120)});render();
+
+window.rmStartupReady=true;
