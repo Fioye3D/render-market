@@ -1,0 +1,15 @@
+{
+  "name": "RenderMarket \u00c2\u00b7 Portfolio Builder",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html",
+  "editorType": [
+    "figma"
+  ],
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+    "allowedDomains": [
+      "none"
+    ]
+  }
+}

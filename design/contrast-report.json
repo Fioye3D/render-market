@@ -1,0 +1,50 @@
+[
+  {
+    "pair": "Body on canvas",
+    "foreground": "#F5F3EE",
+    "background": "#101112",
+    "ratio": 17.05,
+    "target": 4.5,
+    "passes": true
+  },
+  {
+    "pair": "Muted on canvas",
+    "foreground": "#B2B7C1",
+    "background": "#101112",
+    "ratio": 9.39,
+    "target": 4.5,
+    "passes": true
+  },
+  {
+    "pair": "Muted on surface",
+    "foreground": "#B2B7C1",
+    "background": "#191B1E",
+    "ratio": 8.58,
+    "target": 4.5,
+    "passes": true
+  },
+  {
+    "pair": "Primary button",
+    "foreground": "#F5F3EE",
+    "background": "#5053CA",
+    "ratio": 5.52,
+    "target": 4.5,
+    "passes": true
+  },
+  {
+    "pair": "Accent on surface",
+    "foreground": "#B9BBFF",
+    "background": "#191B1E",
+    "ratio": 9.55,
+    "target": 4.5,
+    "passes": true
+  },
+  {
+    "pair": "Error on canvas",
+    "foreground": "#F1B1A4",
+    "background": "#101112",
+    "ratio": 10.41,
+    "target": 4.5,
+    "passes": true
+  }
+]

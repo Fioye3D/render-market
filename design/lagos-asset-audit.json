@@ -1,0 +1,180 @@
+{
+  "assets": 10,
+  "downloads": 40,
+  "largestGLBbytes": 5834676,
+  "assetsUnder8MiB": true,
+  "assetsUnder15MiB": true,
+  "results": [
+    {
+      "id": "canteen",
+      "title": "Lagos / Contemporary canteen",
+      "triangles": 191232,
+      "previewObjects": 351,
+      "embeddedImages": 4,
+      "characters": 3,
+      "GLBbytes": 5834676,
+      "GLBsha256": "69e41c8f60310d6857e850617cbc552c2b9e66225f5138ab62e8e225d820db3f",
+      "files": {
+        "BLEND": 12480404,
+        "GLB": 5834676,
+        "OBJ": 3925752,
+        "FBX": 5697260
+      },
+      "checks": "GLB structure and geometry, embedded images, OBJ texture references and CRC, BLEND/FBX headers, all four paths/sizes pass"
+    },
+    {
+      "id": "barbershop",
+      "title": "Lagos / Barbershop with characters",
+      "triangles": 139808,
+      "previewObjects": 162,
+      "embeddedImages": 3,
+      "characters": 3,
+      "GLBbytes": 3626296,
+      "GLBsha256": "f654a1882883b32e39c24449205185f4f9f161dccb35d9707eeaa71fd8fc1bf2",
+      "files": {
+        "BLEND": 8915612,
+        "GLB": 3626296,
+        "OBJ": 2896093,
+        "FBX": 3771468
+      },
+      "checks": "GLB structure and geometry, embedded images, OBJ texture references and CRC, BLEND/FBX headers, all four paths/sizes pass"
+    },
+    {
+      "id": "church",
+      "title": "Lagos / Community chapel",
+      "triangles": 37388,
+      "previewObjects": 193,
+      "embeddedImages": 4,
+      "characters": 0,
+      "GLBbytes": 2360908,
+      "GLBsha256": "1acb468274cc526cd5c18d5d9eb411084de8c65e608affa6d8e6b2f354e455fa",
+      "files": {
+        "BLEND": 5792980,
+        "GLB": 2360908,
+        "OBJ": 1428475,
+        "FBX": 2230396
+      },
+      "checks": "GLB structure and geometry, embedded images, OBJ texture references and CRC, BLEND/FBX headers, all four paths/sizes pass"
+    },
+    {
+      "id": "market",
+      "title": "Lagos / Produce market",
+      "triangles": 169788,
+      "previewObjects": 239,
+      "embeddedImages": 4,
+      "characters": 3,
+      "GLBbytes": 4404484,
+      "GLBsha256": "2071ece3aad12596200073571d5e16a4eb095aebf31cd072f263d5dda7e61b95",
+      "files": {
+        "BLEND": 11354392,
+        "GLB": 4404484,
+        "OBJ": 3419839,
+        "FBX": 4732156
+      },
+      "checks": "GLB structure and geometry, embedded images, OBJ texture references and CRC, BLEND/FBX headers, all four paths/sizes pass"
+    },
+    {
+      "id": "football",
+      "title": "Lagos / Neighbourhood football pitch",
+      "triangles": 11012,
+      "previewObjects": 105,
+      "embeddedImages": 2,
+      "characters": 0,
+      "GLBbytes": 929540,
+      "GLBsha256": "9fba47297eacf9e79b01544f96ec5f64c614268d45107377b62cabbf4f41b722",
+      "files": {
+        "BLEND": 3108400,
+        "GLB": 929540,
+        "OBJ": 615126,
+        "FBX": 1012316
+      },
+      "checks": "GLB structure and geometry, embedded images, OBJ texture references and CRC, BLEND/FBX headers, all four paths/sizes pass"
+    },
+    {
+      "id": "school",
+      "title": "Lagos / Community school courtyard",
+      "triangles": 56140,
+      "previewObjects": 169,
+      "embeddedImages": 3,
+      "characters": 0,
+      "GLBbytes": 2870508,
+      "GLBsha256": "f4fb6391cad8c105d71adce0c5b5a3d3b9a375a5f29bf72dabc711bc35f593e1",
+      "files": {
+        "BLEND": 7307628,
+        "GLB": 2870508,
+        "OBJ": 1539899,
+        "FBX": 2390332
+      },
+      "checks": "GLB structure and geometry, embedded images, OBJ texture references and CRC, BLEND/FBX headers, all four paths/sizes pass"
+    },
+    {
+      "id": "classroom",
+      "title": "Lagos / Classroom interior",
+      "triangles": 70024,
+      "previewObjects": 273,
+      "embeddedImages": 4,
+      "characters": 0,
+      "GLBbytes": 3771832,
+      "GLBsha256": "ba58826160654844eb9a8c81b8a06f2b88e32e179096746e918d746670a25760",
+      "files": {
+        "BLEND": 7730576,
+        "GLB": 3771832,
+        "OBJ": 1937974,
+        "FBX": 3294140
+      },
+      "checks": "GLB structure and geometry, embedded images, OBJ texture references and CRC, BLEND/FBX headers, all four paths/sizes pass"
+    },
+    {
+      "id": "suya",
+      "title": "Lagos / Evening suya spot",
+      "triangles": 67296,
+      "previewObjects": 135,
+      "embeddedImages": 4,
+      "characters": 1,
+      "GLBbytes": 2542960,
+      "GLBsha256": "aad11cb0db49d492b6bbbd84ae20a1f346f496914a813e61782729b1e90fd47c",
+      "files": {
+        "BLEND": 6903888,
+        "GLB": 2542960,
+        "OBJ": 1860291,
+        "FBX": 2525052
+      },
+      "checks": "GLB structure and geometry, embedded images, OBJ texture references and CRC, BLEND/FBX headers, all four paths/sizes pass"
+    },
+    {
+      "id": "akara-vendor",
+      "title": "Lagos / Akara vendor",
+      "triangles": 62336,
+      "previewObjects": 65,
+      "embeddedImages": 4,
+      "characters": 1,
+      "GLBbytes": 2312636,
+      "GLBsha256": "773cfbeb2e4f407e1d293b95591913c2e3a2b72031afcc5db29777c25ab28dd1",
+      "files": {
+        "BLEND": 6445288,
+        "GLB": 2312636,
+        "OBJ": 1911539,
+        "FBX": 2299820
+      },
+      "checks": "GLB structure and geometry, embedded images, OBJ texture references and CRC, BLEND/FBX headers, all four paths/sizes pass"
+    },
+    {
+      "id": "akara",
+      "title": "Akara / Breakfast prop pack",
+      "triangles": 8228,
+      "previewObjects": 22,
+      "embeddedImages": 3,
+      "characters": 0,
+      "GLBbytes": 902412,
+      "GLBsha256": "a56995e2f8681f4e25ebd1ebe732b19631529077a82c925d25d73ca630c6640b",
+      "files": {
+        "BLEND": 3041196,
+        "GLB": 902412,
+        "OBJ": 806492,
+        "FBX": 926540
+      },
+      "checks": "GLB structure and geometry, embedded images, OBJ texture references and CRC, BLEND/FBX headers, all four paths/sizes pass"
+    }
+  ],
+  "limits": "Static validation; not a browser GPU performance test, visual equivalence certification or complete importer conformance test."
+}

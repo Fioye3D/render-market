@@ -1,0 +1,39 @@
+MIT License
+
+Copyright (c) 2026 RenderMarket contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Third-party font files retain their separate SIL Open Font License notices
+included in assets/fonts/. Cultural reference pages and user-supplied guide
+documents are not relicensed by this file.
+
+The user-supplied Sanctuary Temple Blender scene, its render, and derived
+exports retain their existing ownership and usage terms. They are not
+relicensed under this project's MIT licence. A separate commercial-use
+licence for that scene has not been specified.
+
+The vendored Three.js library retains its MIT licence, included at
+prototype/vendor/three/LICENSE.
+
+The MakeHuman neutral human base mesh in assets/vendor/makehuman/base.obj is
+a third-party bundled graphical asset released under CC0. Its original
+licence is included in that directory. It and the underlying human geometry
+in the occupied Lagos scenes retain their CC0 status; this project does not
+claim authorship of that base mesh. MakeHuman application code is not included.

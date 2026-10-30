@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "name": "RenderMarket",
+    "version": "0.4.0",
+    "status": "reference-informed design iteration, created 2026-10-29"
+  },
+  "color": {
+    "canvas": "#101112",
+    "surface": "#191B1E",
+    "raised": "#202327",
+    "border": "#3D424A",
+    "text": "#F5F3EE",
+    "muted": "#B2B7C1",
+    "action": "#5053CA",
+    "accent": "#B9BBFF",
+    "success": "#A9D7BD",
+    "error": "#F1B1A4"
+  },
+  "typography": {
+    "heading": "Space Grotesk",
+    "body": "Inter",
+    "scale": [
+      12,
+      14,
+      16,
+      18,
+      24,
+      36,
+      44,
+      62
+    ]
+  },
+  "spacing": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "radius": {
+    "control": 8,
+    "card": 12,
+    "hero": 16
+  },
+  "layout": {
+    "desktop": 1440,
+    "mobile": 390,
+    "desktopMargin": 56,
+    "mobileMargin": 20,
+    "gutter": 24
+  }
+}
