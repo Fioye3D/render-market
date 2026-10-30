@@ -5,12 +5,12 @@
     "status": "reference-informed design iteration, created 2026-10-29"
   },
   "color": {
-    "canvas": "#101112",
-    "surface": "#191B1E",
-    "raised": "#202327",
-    "border": "#3D424A",
-    "text": "#F5F3EE",
-    "muted": "#B2B7C1",
+    "canvas": "#0b0f1a",
+    "surface": "#101724",
+    "raised": "#172231",
+    "border": "#344457",
+    "text": "#f8fafc",
+    "muted": "#aebbc9",
     "action": "#285c82",
     "accent": "#c4ccd3",
     "success": "#bec8c2",

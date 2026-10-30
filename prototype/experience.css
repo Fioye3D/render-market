@@ -1,11 +1,15 @@
 /* Restrained, square-edged interface. No decorative animation. */
 *,*::before,*::after{box-shadow:none!important;text-shadow:none!important;border-radius:0!important;animation:none!important;transition:none!important;backdrop-filter:none!important}
-html{background:#101112;color:#f5f3ee;font-family:Arial,Helvetica,sans-serif;scroll-behavior:auto}
+html{background:#0b0f1a;color:#f8fafc;font-family:Arial,Helvetica,sans-serif;scroll-behavior:auto}
 body,input,button,select,textarea{font-family:Arial,Helvetica,sans-serif}
 svg text{font-family:Arial,Helvetica,sans-serif!important}
-.policy-links{display:flex;flex-wrap:wrap;justify-content:center;gap:24px;padding:24px;border-top:1px solid #3d424a;font-size:13px;color:#b2b7c1}.policy-links a{color:inherit;padding:8px}
+.policy-links{display:flex;flex-wrap:wrap;justify-content:center;gap:24px;padding:24px;border-top:1px solid #344457;font-size:13px;color:#aebbc9}.policy-links a{color:inherit;padding:8px}
 .rm-image-pending{position:relative;background:#20272c}.rm-image-pending>img{opacity:0}
 .rm-image-state{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:12px;padding:24px;background:#20272c;color:#c4ccd3;font:12px Arial,sans-serif;pointer-events:none}
 .rm-image-state i{display:block;height:12px;background:#38434b;width:64%}.rm-image-state i:nth-child(2){width:42%}.rm-image-state i:nth-child(3){width:78%;height:48px}
 .rm-media-error>img{visibility:hidden}
-.policy-page{max-width:800px;margin:auto;padding:40px 24px;line-height:1.75}.policy-page a{color:#c4ccd3}.policy-page h1{font-size:36px;line-height:1.2}.policy-page h2{font-size:22px;margin-top:32px}.policy-page p{color:#b2b7c1}
+.policy-page{max-width:800px;margin:auto;padding:40px 24px;line-height:1.75}.policy-page a{color:#c4ccd3}.policy-page h1{font-size:36px;line-height:1.2}.policy-page h2{font-size:22px;margin-top:32px}.policy-page p{color:#aebbc9}
+
+.reviewbar{padding:8px 24px;min-height:40px;font-size:11px;background:#101724}.reviewbar button{min-height:36px}.reviewbrand span{margin-left:8px}.reviewbar nav{gap:20px}.policy-links{background:#0b0f1a;border-color:#344457}
+.topbar{background:#0b0f1a;border-color:#344457}.brandmark{color:#c4ccd3}.product-layout{gap:32px}.file-panel{background:#101724;border-color:#344457}.content-section{padding:32px 0}.content-section h2{font-family:'Segoe UI',Arial,sans-serif;font-weight:600}.download-link{background:#172231}.stage{background:#101724}.related-grid{gap:20px}.related-card{background:#101724;border-color:#344457}
+@media(max-width:700px){.reviewbar{padding:8px 16px}.reviewbar nav{gap:8px}.reviewbar nav a{min-height:36px;display:flex;align-items:center}.reviewbar .reviewbrand{display:none}.reviewbar nav{width:100%;justify-content:space-between}.reviewbar button{padding:7px;font-size:10px}.topbar{padding:18px 20px}main.policy-page{padding:28px 20px}}
