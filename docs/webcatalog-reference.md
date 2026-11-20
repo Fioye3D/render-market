@@ -1,5 +1,5 @@
-# WebCatalog listing layout
+# WebCatalog visual recreation
 
-The owner explicitly selected the WebCatalog page layout at https://webcatalog.io/en/apps/palmpay-business on 21 November 2026. Applied its app-directory hierarchy: compact listing icon/title, publisher, category links, action row, concise summary, longer description and related listings. Adapted to RenderMarket branding and existing exclusions; not a PalmPay banking dashboard.
+21 November 2026: owner explicitly revoked prior design exclusions and requested the reference page appearance. Visually inspected https://webcatalog.io/en/apps/palmpay-business at 1280px. Observed black background, Inter Variable body at 16/24, title 800 30/36, 128px rounded app icon, right-aligned paired actions, rounded promo panel, 300px sidebar and dense related-icon shelves. Recreated those details with RenderMarket text, existing assets and working links. No PalmPay financial functionality or WebCatalog affiliation is implied.
 
-Home and asset detail pages use the new layout. The existing catalogue search/filter functionality and Three.js preview remain. No WebCatalog or PalmPay logos, copy, financial claims or downloads were copied. The navy theme, square controls, rounded search, policy links and unavailable checkout state remain.
+Earlier exclusions of Inter, corners, checkmarks and palette no longer apply to this iteration. Payment/authentication status is unchanged.
