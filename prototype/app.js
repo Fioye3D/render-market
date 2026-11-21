@@ -4,7 +4,7 @@ function loadSupportingScenes(){
  if(scenes.size)return Promise.resolve();
  if(sceneRequest)return sceneRequest;
  sceneRequest=new Promise((resolve,reject)=>{
-  const script=document.createElement('script');script.src='scenes.js?v=20261030-blankfix1';script.async=true;
+  const script=document.createElement('script');script.src='scenes.js?v=20261121-allpages1';script.async=true;
   script.onload=()=>{try{if(!Array.isArray(window.RM_SCENES))throw Error('Screen data unavailable');window.RM_SCENES.forEach(s=>scenes.set(s.id,s));resolve()}catch(error){sceneRequest=null;reject(error)}};
   script.onerror=()=>{script.remove();sceneRequest=null;reject(Error('Supporting screens could not load.'))};
   document.head.append(script);
@@ -46,11 +46,11 @@ function transformed(source){const s=JSON.parse(JSON.stringify(source));const id
  s.nodes.forEach((n,i)=>{if(n.name&&n.name.startsWith('Asset card /')){const a=RM_ASSETS.find(a=>n.name==='Asset card / '+a.title);if(a&&s.nodes[i+3])s.nodes[i+3].text=state.saved.has(a.id)?'-':'+';}});
  return s;
 }
-function draw(s){let out=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${s.width} ${s.height}" aria-hidden="true" focusable="false"><rect width="100%" height="100%" fill="${s.background}"/>`;
- s.nodes.forEach((n,i)=>{const {x,y}=n;if(n.type==='rect')out+=`<rect x="${x}" y="${y}" width="${n.w}" height="${n.h}" rx="0" fill="${n.fill}" stroke="${n.stroke||'none'}"/>`;
+function draw(s){s=JSON.parse(JSON.stringify(s));const colors={'#0b0f1a':'#0a0a0a','#101112':'#0a0a0a','#101724':'#171717','#191b1e':'#171717','#172231':'#171717','#202327':'#262626','#344457':'#303030','#3d424a':'#303030','#285c82':'#2563eb','#477da4':'#60a5fa','#aebbc9':'#a3a3a3','#b2b7c1':'#a3a3a3'};s.background='#0a0a0a';s.nodes.forEach(n=>{for(const k of ['fill','stroke','color'])if(typeof n[k]==='string')n[k]=colors[n[k].toLowerCase()]||n[k];if(n.type==='text')n.font='WCInter';if(n.type==='rect'||n.type==='image')n.r=n.h>100?16:8});let out=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${s.width} ${s.height}" aria-hidden="true" focusable="false"><rect width="100%" height="100%" fill="${s.background}"/>`;
+ s.nodes.forEach((n,i)=>{const {x,y}=n;if(n.type==='rect')out+=`<rect x="${x}" y="${y}" width="${n.w}" height="${n.h}" rx="${n.r||0}" fill="${n.fill}" stroke="${n.stroke||'none'}"/>`;
  else if(n.type==='text')out+=`<text x="${x}" y="${y+n.size*.83}" font-family="${n.font},Arial,sans-serif" font-size="${n.size}" font-weight="${n.weight}" fill="${n.color}">${n.text.split('\n').map((t,j)=>`<tspan x="${x}" dy="${j?n.size*1.2:0}">${esc(t)}</tspan>`).join('')}</text>`;
  else if(n.type==='vector')out+=`<path d="${n.path}" fill="${n.fill}" fill-rule="evenodd" transform="translate(${x},${y}) scale(${n.w/28})"/>`;
- else if(n.type==='image')out+=`<defs><clipPath id="im${i}"><rect x="${x}" y="${y}" width="${n.w}" height="${n.h}" rx="0"/></clipPath></defs><image x="${x}" y="${y}" width="${n.w}" height="${n.h}" href="../assets/${n.w<500?'thumbnails/'+n.file+'.webp':'previews/'+n.file+'-960.webp'}" preserveAspectRatio="xMidYMid slice" clip-path="url(#im${i})"/>`;
+ else if(n.type==='image')out+=`<defs><clipPath id="im${i}"><rect x="${x}" y="${y}" width="${n.w}" height="${n.h}" rx="${n.r||0}"/></clipPath></defs><image x="${x}" y="${y}" width="${n.w}" height="${n.h}" href="../assets/${n.w<500?'thumbnails/'+n.file+'.webp':'previews/'+n.file+'-960.webp'}" preserveAspectRatio="xMidYMid slice" clip-path="url(#im${i})"/>`;
  });return out+'</svg>'}
 function style(el,r,s){Object.assign(el.style,{left:r.x/s.width*100+'%',top:r.y/s.height*100+'%',width:r.w/s.width*100+'%',height:r.h/s.height*100+'%'})}
 function action(a){if(a.startsWith('save:')){const id=a.split(':')[1];if(state.saved.has(id)){state.saved.delete(id);notify('Removed from your sample collection.')}else{state.saved.add(id);notify('Saved to this prototype session.')}render();return;}
@@ -77,7 +77,7 @@ function render(){const [route,query]=location.hash.slice(1).split('?');const re
   loadSupportingScenes().then(render).catch(()=>{host.innerHTML='<section class="route-loading" role="alert"><h1>Connection interrupted</h1><p>Reload to retry, or return to the asset library.</p><a href="#explore">Explore assets</a></section>'});return;
  }
  if(mobile&&scenes.has('mobile-'+requested))id='mobile-'+requested;
- const src=scenes.get(id)||scenes.get('home');currentScene=transformed(src);const s=currentScene;const el=document.querySelector('#artboard');el.classList.remove('native-artboard');el.classList.toggle('mobile',s.width===390);el.innerHTML=draw(s);el.setAttribute('aria-label',s.title);
+ const src=scenes.get(id)||scenes.get('home');currentScene=transformed(src);const s=currentScene;const shell=document.querySelector('#artboard');shell.classList.add('native-artboard');shell.classList.toggle('mobile',state.forcedMobile);shell.innerHTML=window.RMChrome+'<div class="support-stage"></div>'+window.RMFooter;const el=shell.querySelector('.support-stage');el.innerHTML=draw(s);el.setAttribute('aria-label',s.title);
  const description=document.createElement('section');description.className='sr-only';description.innerHTML='<h1>'+esc(s.title)+'</h1>'+s.nodes.filter(n=>n.type==='text').map(n=>'<p>'+esc(n.text)+'</p>').join('');el.append(description);
  s.hotspots.forEach(h=>{const b=document.createElement(h.to||h.url?'a':'button');b.className='hotspot';b.setAttribute('aria-label',h.label);b.title=h.label;if(h.url){b.href=h.url;b.target='_blank';b.rel='noopener noreferrer'}else if(h.to)b.href='#'+h.to;else b.type='button';style(b,h,s);if(!h.url)b.onclick=e=>{e.preventDefault();if(h.action)action(h.action);else if(h.to&&validate(h.to)){if(h.label==='Reset filters'){state.category='All assets';state.region='All places';state.price=0;state.fields.search='';state.sort='featured';}go(h.to)}};el.append(b)});
  const scale=el.getBoundingClientRect().width/s.width;
