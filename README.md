@@ -112,4 +112,4 @@ See [LICENSE](LICENSE) for the source-code terms and exclusions. Sanctuary Templ
 
 ## Fioye Studios
 
-RenderMarket is a product extension of Fioye Studios, the creative studio led by Adefioye Favour focused on premium product visuals, 3D animation and VFX. RenderMarket focuses on digital assets and African creative worlds. The current website remains a portfolio prototype; authentication, payments and protected delivery are not live.
+RenderMarket is a digital asset marketplace by Fioye Studios, the creative studio led by Adefioye Favour focused on premium product visuals, 3D animation and VFX. RenderMarket focuses on digital assets and African creative worlds. The current website remains a portfolio prototype; authentication, payments and protected delivery are not live.
