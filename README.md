@@ -109,3 +109,7 @@ Third-party resources include Three.js (MIT), Inter and Space Grotesk (SIL Open 
 ## Licence
 
 See [LICENSE](LICENSE) for the source-code terms and exclusions. Sanctuary Temple and third-party resources retain their separate ownership and licence conditions. Sample marketplace prices do not establish a purchase agreement or grant commercial asset rights.
+
+## Fioye Studios
+
+RenderMarket is a product extension of Fioye Studios, the creative studio led by Adefioye Favour focused on premium product visuals, 3D animation and VFX. RenderMarket focuses on digital assets and African creative worlds. The current website remains a portfolio prototype; authentication, payments and protected delivery are not live.

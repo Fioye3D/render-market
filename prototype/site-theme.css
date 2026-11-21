@@ -16,3 +16,5 @@ body.w-product main{max-width:none;padding:36px 16px 0}body.w-product .title-row
 @media(max-width:820px){body.w-product .product-layout{display:flex;flex-direction:column}body.w-product .asset-main{width:100%;display:flex;flex-direction:column}body.w-product .file-panel{width:100%}.support-stage{margin-top:16px}body.w-product .content-section p{font-size:14px;line-height:23px}body.w-product h1{font-size:27px;line-height:34px}}
 
 .rm-image-state{display:none!important}.rm-image-pending>img{opacity:1!important}.wc-tiles img,.m-card-preview{background:#171717!important;background-image:none!important}
+
+.studio-endorsement{display:block;font-size:12px;line-height:18px;color:#a3a3a3;margin:4px 0 8px}
