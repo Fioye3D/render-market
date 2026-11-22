@@ -73,7 +73,7 @@ function render(){const [route,query]=location.hash.slice(1).split('?');const re
  document.body.dataset.page='supporting';
  if(!scenes.size){
   const host=document.querySelector('#artboard');host.classList.add('native-artboard');
-  host.innerHTML='<section class="route-loading" role="status" aria-busy="true"><h1>Loading workspace</h1><div class="route-skeleton"><span></span><span></span><span></span></div></section>';
+  host.innerHTML='<section class="route-loading" role="status" aria-busy="true"><h1>Loading workspace</h1></section>';
   loadSupportingScenes().then(render).catch(()=>{host.innerHTML='<section class="route-loading" role="alert"><h1>Connection interrupted</h1><p>Reload to retry, or return to the asset library.</p><a href="#explore">Explore assets</a></section>'});return;
  }
  if(mobile&&scenes.has('mobile-'+requested))id='mobile-'+requested;
